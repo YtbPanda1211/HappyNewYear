@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterious Button</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./frw.jpg" type="image/jpeg">
+    <audio id="audio">
+        <source src="./open.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <div class="grid"></div>
+
+    <div class="warning"></div>
+
+    <div class="base">
+        <button id="activate">
+            <span></span>
+        </button>
+    </div>
+
+    <div class="box" id="cover" onclick="opens()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span></span><span></span>
+    </div>
+
+    <div class="hinges"></div>
+
+    <div id="turn-off"></div>
+    <div id="closing"></div>
+
+    <div id="restart"><button id="reload"></button></div>
+
+    <audio id="alarm">
+        <source src="./ns.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="main.js"></script>
+    <script>
+        var sopen = document.getElementById("audio");
+        function opens() {
+            sopen.play();
+        }
+    </script>
+</body>
+
+</html>
